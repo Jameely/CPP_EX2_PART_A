@@ -50,7 +50,6 @@ using namespace ariel;
         CHECK_EQ(A.stacksize(),B.stacksize());
         CHECK(B.stacksize()==0);
         CHECK(A.cardesTaken()+B.cardesTaken()==52);
-//        CHECK_FALSE((A.iswin()) && (B.iswin()));            
         CHECK((A.iswin() || B.iswin())==1);
         string winner =game.getWinner();
         if(winner==A.getname()){
